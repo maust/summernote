@@ -314,7 +314,7 @@ define([
         var rng = range.create($cont[0], 0);
         rng.wrapBodyInlineWithPara();
 
-        expect($cont.html()).to.equalsIgnoreCase('<p><br></p>');
+        expect($cont.html()).to.equalsIgnoreCase('<p style="margin: 0 0 0.0001pt"><br></p>');
       });
 
       it('should wrap text with paragraph for text', function () {
